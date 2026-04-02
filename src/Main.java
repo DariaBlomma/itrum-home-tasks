@@ -1,4 +1,5 @@
 import core.task1.CareTaker;
+import core.task1.Task1Tests;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,5 +13,9 @@ public class Main {
 
         careTaker.undo();
         System.out.println(careTaker);
+
+
+        Task1Tests task1Tests = new Task1Tests();
+        task1Tests.runAllTests();
     }
 }
