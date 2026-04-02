@@ -1,6 +1,6 @@
 package collection.task2;
 
-import tests.Testable
+import tests.Testable;
 import java.util.Map;
 
 public class OccurrenceCounterTest implements Testable {
