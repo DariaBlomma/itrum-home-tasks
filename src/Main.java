@@ -2,6 +2,7 @@ import collection.task1.FilterMain;
 import collection.task1.FilterTest;
 import core.task1.CareTaker;
 import core.task1.Task1Tests;
+import collection.task2.OccurrenceCounterTest;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +25,8 @@ public class Main {
         filterMain.run();
         FilterTest filterTest = new FilterTest();
         filterTest.runAllTests();
+
+        OccurrenceCounterTest occurrenceCounterTest = new OccurrenceCounterTest();
+        occurrenceCounterTest.runAllTests();
     }
 }
