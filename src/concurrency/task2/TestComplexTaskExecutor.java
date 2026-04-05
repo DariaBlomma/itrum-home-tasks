@@ -3,7 +3,7 @@ package concurrency.task2;
 public class TestComplexTaskExecutor {
 
     public static void main(String[] args) {
-        ComplexTaskExecutor taskExecutor = new ComplexTaskExecutor(5); // Количество задач для выполнения
+        ComplexTaskExecutor taskExecutor = new ComplexTaskExecutor();
 
         Runnable testRunnable = () -> {
             System.out.println(Thread.currentThread().getName() + " started the test.");

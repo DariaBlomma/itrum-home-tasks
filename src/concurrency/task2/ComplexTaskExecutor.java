@@ -9,13 +9,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class ComplexTaskExecutor {
-    private int numberOfTasksFromConstructor;
-
-    public ComplexTaskExecutor(int numberOfTasksFromConstructor) {
-        this.numberOfTasksFromConstructor = numberOfTasksFromConstructor;
-    }
-
-    void executeTasks(int numberOfTasks) {
+     void executeTasks(int numberOfTasks) {
         try (ExecutorService executorService = Executors.newFixedThreadPool(numberOfTasks)) {
             AtomicInteger successCount = new AtomicInteger(0);
 
