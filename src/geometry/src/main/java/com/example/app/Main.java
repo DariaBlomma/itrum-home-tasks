@@ -18,6 +18,8 @@ public class Main {
            BaseTriangle triangle = BaseTriangle.create(7, 8, 9);
            System.out.println("Triangle area: " + triangle.getArea());
            System.out.println("Triangle perimeter: " + triangle.getPerimeter());
+
+           System.out.println("Figure color: " + circle.getColor());
        } catch (IllegalArgumentException e) {
            System.out.println("Could not create figure: " + e);
        }
