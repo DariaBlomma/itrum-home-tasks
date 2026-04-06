@@ -31,6 +31,10 @@ public class Main {
 
                case 1 -> System.out.println("Triangle's area is bigger than rectangle's one");
            }
+           FiguresComparison.printOldMessage(circle);
+           // Exception in thread "main" java.lang.NoSuchMethodError: 'void com.example.geometry.BaseFigure.oldMethod()'
+           //	at com.example.geometry.utils.FiguresComparison.printOldMessage(FiguresComparison.java:30)
+           //	at com.example.app.Main.main(Main.java:34)
        } catch (IllegalArgumentException e) {
            System.out.println("Could not create figure: " + e);
        }
