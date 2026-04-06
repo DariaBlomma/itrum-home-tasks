@@ -3,6 +3,7 @@ package com.example.app;
 import com.example.geometry.BaseCircle;
 import com.example.geometry.BaseRectangle;
 import com.example.geometry.BaseTriangle;
+import com.example.geometry.utils.FiguresComparison;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +21,16 @@ public class Main {
            System.out.println("Triangle perimeter: " + triangle.getPerimeter());
 
            System.out.println("Figure color: " + circle.getColor());
+
+           int triangleToRectangleAreaComparison = FiguresComparison.compareByArea(triangle, rectangle);
+
+           switch (triangleToRectangleAreaComparison) {
+               case 0 -> System.out.println("Triangle equals rectangle by area");
+
+               case -1 -> System.out.println("Triangle's area is less than rectangle's one");
+
+               case 1 -> System.out.println("Triangle's area is bigger than rectangle's one");
+           }
        } catch (IllegalArgumentException e) {
            System.out.println("Could not create figure: " + e);
        }
